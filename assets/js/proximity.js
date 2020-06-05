@@ -11,10 +11,11 @@ class ProximityManager {
 		let color = getComputedStyle(document.documentElement).getPropertyValue("--hover-color");
 		let lighterColor = getComputedStyle(document.documentElement).getPropertyValue("--light-hover-color");
 
-		if (this.proxim.matches(":hover"))
-			this.proxim.style.background = lighterColor + ` radial-gradient( circle at ${x}px ${y}px, ${color} 0%, transparent ${this.radius}px)`;
-		else
-			this.proxim.style.background = `radial-gradient( circle at ${x}px ${y}px, ${lighterColor} 0%, transparent ${this.radius}px)`;
+		// if (this.proxim.matches(":hover"))
+		// 	this.proxim.style.background = `radial-gradient( circle at ${x}px ${y}px, ${color} 0%, transparent 300px)`;
+		// else
+		// 	this.proxim.style.background = "";
+		this.proxim.style.borderImageSource = `radial-gradient( circle at ${x}px ${y}px, ${lighterColor} 0%, transparent ${this.radius}px)`;
 	}
 }
 
