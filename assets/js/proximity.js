@@ -16,6 +16,7 @@ class ProximityManager {
 		// else
 		// 	this.proxim.style.background = "";
 		this.proxim.style.borderImageSource = `radial-gradient( circle at ${x}px ${y}px, ${lighterColor} 0%, transparent ${this.radius}px)`;
+		this.proxim.style.borderColor = "var(--hover-color)"
 	}
 }
 

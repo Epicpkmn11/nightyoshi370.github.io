@@ -126,8 +126,7 @@ button {
 			border-bottom-width: thin;
 			border-left-width: 0;
 			border-right-width: 0;
-			border-color: transparent;
-			border: 1px solid;
+			border: 1px solid transparent;
 			border-image-slice: 1;
 
 			-o-transition: all 0.3s ease;
